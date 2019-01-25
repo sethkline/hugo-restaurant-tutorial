@@ -3,14 +3,15 @@ backend:
   repo: sethkline/hugo-restaurant-tutorial
   branch: master # Branch to update (optional; defaults to master)
 
-  media_folder: "src/img/gallery"
+media_folder: "src/img/gallery" # Folder where user uploaded files should go
+public_folder: "img/gallery"
 
-  collections:
-    -name: food
-    label: "Food Item"
-    folder: "site/content/food"
-    create: true
-    fields:
+collections:
+  - name: food
+    label: "Food Item" # Used in the UI, ie.: "New Post"
+    folder: "site/content/food" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
       - {label: "Name of Item", name: "title", widget: "string"}
       - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
