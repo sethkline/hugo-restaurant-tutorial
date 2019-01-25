@@ -17,3 +17,12 @@ collections:
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
       - {label: "Price", name: "price", widget: "string"}
+  - name: drinks
+    label: "Drink Item"
+    folder: "site/content/drink"
+    create: true
+    fields:
+      - {label: "Name of Drink", name: "title", widget: "string"}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Type of Drink", name: "type", widget: "string", default: "cocktails"}
+      - {label: "Price", name: "price", widget: "string"}
