@@ -28,9 +28,9 @@ collections:
       - {label: "Type of Drink", name: "type", widget: "string", default: "cocktails"}
       - {label: "Price", name: "price", widget: "string"}
   - name: gallery
-      label: "Gallery Image"
-      folder: "site/content/gallery"
-      create: true
-      fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Gallery Image", name: "image", widget: "image"}
+    label: "Gallery Image"
+    folder: "site/content/gallery"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Gallery Image", name: "image", widget: "image"}
