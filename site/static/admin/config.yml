@@ -23,6 +23,7 @@ collections:
     create: true
     fields:
       - {label: "Name of Drink", name: "title", widget: "string"}
+      - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of Drink", name: "type", widget: "string", default: "cocktails"}
       - {label: "Price", name: "price", widget: "string"}
